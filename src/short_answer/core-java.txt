@@ -1,7 +1,7 @@
 ***ANSWER ALL OF THE QUESTIONS BELOW***
 
 What is a programming language?
-Answer: It is ag
+Answer:
 
 What is a JDK composed of? Define each components?
 Answer:
