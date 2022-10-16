@@ -5,6 +5,7 @@ import codelab.Student;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -48,7 +49,17 @@ public class CsvReader {
         for (Student student : roster) {
             System.out.println(convertNumberOfProblemsSolved(student));
         }
+        int total = 0;
+        int count = 0;
+        for (Student student : roster) {
+            total += student.getNumberOfExercisesSolved();
+            count++;
+        }
+
+        int avg = total/count;
+        System.out.println("The average score of the class is: " +avg);
     }
+
 
     private static String convertNumberOfProblemsSolved(Student student) {
         String name = student.getFirstName();
