@@ -2,45 +2,81 @@
 
 What is a programming language?
 Answer:
+A language used to write instructions for the computer.
+It lets the programmer express data processing in a symbolic manner without regard to machine-specific details.
 
 What is a JDK composed of? Define each components?
-Answer:
+Answer: The Java Development Kit
+(JDK) is a software development environment used for developing Java applications and applets.
+It includes the Java Runtime Environment (JRE), an interpreter/loader (java), a compiler (javac), an archiver (jar),
+a documentation generator (javadoc) and other tools needed in Java development.
 
 What is an IDE?
-Answer:
+Answer: An integrated development environment (IDE)
+is software for building applications that combines common developer tools into a single graphical user interface (GUI)
 
 What are some of the most popular Java IDEs available in the market?
-Answer:
+Answer: Best Java IDE 2022 | Most Popular Java IDE
+        Eclipse.
+        IntelliJ IDEA.
+        NetBeans.
+        BlueJ.
+       (Oracle) JDeveloper.
+        DrJava.
+        jGRASP.
+        MyEclipse.
 
 Explain the entire java life cycle.
-Answer:
+Answer: Life cycle of a java program tells us what happens right from the point when we type source code in a text editor to the point that source code is converted into machine code (0’s and 1’s).
+
+        There are three main stages in the life cycle of a java program. They are:
+
+        Editing the program
+        Compiling the source code
+        Executing the byte code
 
 What is a class?
-Answer:
+Answer:A class — in the context of Java —
+is a template used to create objects and to define object data types and methods.
 
 What is an object?
-Answer:
+Answer:A Java object is a member (also called an instance) of a Java class.
+Each object has an identity, a behavior and a state.
+The state of an object is stored in fields (variables), while methods (functions) display the object's behavior.
+Objects are created at runtime from templates, which are also known as classes.
 
 What is the entry point of a Java project?
-Answer:
+Answer:The value classname is the name of the class that is your application's entry point.
+Recall that the entry point is a class having a method with signature public static void main(String[] args) .
+The main method of the class specified in the Main-Class header is executed.
 
 Why is the main() method static?
-Answer:
+Answer:The main() method is static so that JVM can invoke it without instantiating the class.
+This also saves the unnecessary wastage of memory which would have been used by the object declared only for calling the main() method by the JVM.
 
 Which class is the superclass of all classes?
-Answer:
+Answer:The Object class, which is stored in the java. lang package,
+is the ultimate superclass of all Java classes.
 
 What is difference between path and classpath variables?
-Answer:
+Answer:The main difference between PATH and CLASSPATH is that
+Path is set for java tools in java programs like java and javac, which are used to compile your code.
+Whereas
+CLASSPATH is used by System or Application class loader to locate and load compile Java bytecodes stored in the . class file
 
 What is the difference between an Interface and Abstract class?
-Answer:
+Answer:The Abstract class and Interface both are used to have abstraction.
+An abstract class contains an abstract keyword on the declaration whereas an Interface is a sketch that is used to implement a class.
 
 Can you make an Object from an Interface and Abstract class? If yes or no, how would you do it?
-Answer:
+Answer: No you can not instantiate an interface or abstract class.
+But you can instantiate an anonymous class that implements/extends the interface or abstract class without defining a class object.
+But it is just a shortcut to defining a fully named class
 
 What is Access Modifier?
 Answer:
+Image result for What is Access Modifier?
+In Java, access modifiers are used to set the accessibility (visibility) of classes, interfaces, variables, methods, constructors, data members, and the setter methods. For example, class Animal { public void method1() {...} private void method2() {...} }
 
 What is OOP? Define each OOP concept.
 Answer:
@@ -139,43 +175,59 @@ What is constructor chaining in Java?
 Answer:
 
 The difference between Serial and Parallel Garbage Collector?
-Answer:
+Answer:The parallel collector is also known as throughput collector, it's a generational collector similar to the serial collector.
+The primary difference between the serial and parallel collectors is that the parallel collector has multiple threads that are used to speed up garbage collection.
 
 What does JIT stands for?
-Answer:
+Answer:A just-in-time (JIT) inventory system is a management strategy that has a company receive goods as close as possible to when they are actually needed.
 
 Explain the process of Java garbage collection?
-Answer:
+Answer:Java garbage collection is the process by which Java programs perform automatic memory management.
 
 Can you guarantee the garbage collection process?
-Answer:
+Answer:No, Garbage collection does not guarantee that a program will not run out of memory.
+The purpose of garbage collection (GC) is to identify and discard objects that are no longer needed by a Java program,
+so that their resources can be reclaimed and reused.
 
 What is the difference between stack and heap in Java?
-Answer:
+Answer:Java Heap Space is used throughout the application, but Stack is only used for the method — or methods — currently running. The Heap Space contains all objects are created, but Stack contains any reference to those objects.
+Objects stored in the Heap can be accessed throughout the application
 
 What is reflection in Java and why is it useful?
-Answer:
+Answer:Reflection is a feature in the Java programming language. It allows an executing Java program to examine or "introspect" upon itself, and manipulate internal properties of the program. For example,
+it's possible for a Java class to obtain the names of all its members and display them.
 
 What is multithreading in Java?
-Answer:
+Answer:In Java, Multithreading refers to a process of executing two or more threads simultaneously for maximum utilization of the CPU.
+A thread in Java is a lightweight process requiring fewer resources to create and share the process resources.
 
 What is synchronization in Java?
-Answer:
+Answer:Synchronization in java is the capability to control the access of multiple threads to any shared resource.
+In the Multithreading concept, multiple threads try to access the shared resources at a time to produce inconsistent results.
+The synchronization is necessary for reliable communication between threads.
 
 What is a Framework?
-Answer:
+Answer:a basic structure underlying a system, concept, or text.
 
 What are the testing Frameworks available in Java?
-Answer:
+Answer:Top Java Testing Frameworks and Tools
+       Selenium. Selenium is an open-source software testing tool for browser automation. ...
+       JUnit. JUnit is an open-source foundation of testing frameworks on the Java Virtual Machine. ...
+       TestNG. ...
+       SerenityBDD. ...
+       Mockito.
 
 What are jUnit and testNG?
-Answer:
+Answer:JUnit is an open-source framework used to trigger and write tests.
+TestNG is a Java-based framework that is an upgraded option for running tests. Parallel test Runs.
+JUnit does not support to run parallel tests. TestNG can run parallel tests.
 
 What are the dependencies for this project?
-Answer:
+Answer:A project dependency is a task that relies on the completion of a different task.
 
 What is dependency injection in Java?
-Answer:
+Answer:Dependency Injection in Java is a way to achieve Inversion of control (IoC) in our application by moving objects binding from compile time to runtime. We can achieve IoC through Factory Pattern, Template Method Design Pattern, Strategy Pattern and Service Locator pattern too.
 
 Explain what static binding and dynamic binding is?
-Answer:
+Answer:Static binding uses Type information for binding while Dynamic binding uses Objects to resolve binding. Overloaded methods are resolved
+(deciding which method to be called when there are multiple methods with same name) using static binding while overridden methods using dynamic binding, i.e, at run time.
