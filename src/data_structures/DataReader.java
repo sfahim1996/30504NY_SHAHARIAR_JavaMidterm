@@ -1,5 +1,9 @@
 package data_structures;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.List;
+
 public class DataReader {
 
     /** INSTRUCTIONS
@@ -20,6 +24,22 @@ public class DataReader {
 
     public static void main(String[] args) {
         String textFilePath = System.getProperty("user.dir") + "/src/data_structures/data/self-driving-car.txt";
+        File file = new File(textFilePath);
+
+        try(FileInputStream fis =new FileInputStream(file);
+        InputStreamReader isr = new InputStreamReader(fis);
+            BufferedReader br = new BufferedReader(isr)){
+
+            String line;
+            while ((line = br.readLine()) !=null){
+                System.out.println(line);
+
+            }
+
+            List
+        }
+
+
 
     }
 
