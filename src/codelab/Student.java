@@ -1,5 +1,7 @@
 package codelab;
 
+import org.jetbrains.annotations.NotNull;
+
 public class Student implements Comparable<Student> {
 
     private String firstName;
@@ -36,7 +38,7 @@ public class Student implements Comparable<Student> {
         this.numberOfExercisesSolved = numberOfExercisesSolved;
     }
 
-    public int compareTo(Student student) {
+    public int compareTo(@NotNull Student student) {
         return student.getNumberOfExercisesSolved() - this.getNumberOfExercisesSolved();
     }
 
